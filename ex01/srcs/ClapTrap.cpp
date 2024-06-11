@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:24:45 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/11 14:21:35 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/11 20:48:13 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,10 @@ void ClapTrap::attack(const std::string& target)
 {
 	if ( _nrgpoints >= 1)
 	{
-		std::cout << _name << " attacks " << target << ", causing " << _atkpoints << " points of damage! "<< std::endl;
+		std::cout << "ClapTrap " << _name << " attacks " << target << ", causing " << _atkpoints << " points of damage! "<< std::endl;
 	}
 	else
-		std::cout << "Not enough enery points" << std::endl;
+		std::cout << "ClapTrap Not enough enery points" << std::endl;
 }
 
 void ClapTrap::takeDamage(unsigned int amount)

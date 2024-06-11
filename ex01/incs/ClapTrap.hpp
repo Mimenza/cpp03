@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:24:47 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/11 13:28:42 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/11 20:45:08 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class ClapTrap
 {
-	private:
+	protected:
 		std::string _name;
 		int _hitpoints; //health of the player
 		unsigned int _nrgpoints; //energy of the player (stamina)

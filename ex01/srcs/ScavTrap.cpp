@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 12:28:14 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/11 14:25:53 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/11 20:48:08 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,14 @@ std::ostream&	operator<<(std::ostream& stream, ScavTrap const& sl)
 {
 	sl.display(stream);
 	return (stream);
+}
+
+void ScavTrap::attack(const std::string& target)
+{
+	if ( _nrgpoints >= 1)
+	{
+		std::cout << "ScavTrap " << _name << " attacks " << target << ", causing " << _atkpoints << " points of damage! "<< std::endl;
+	}
+	else
+		std::cout << "ScavTrap Not enough enery points" << std::endl;
 }
