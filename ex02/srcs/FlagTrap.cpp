@@ -12,24 +12,34 @@
 
 #include "../incs/FlagTrap.hpp"
 
-FlagTrap::FlagTrap(void): ClapTrap("", 100, 100, 30)
+FlagTrap::FlagTrap(void): ClapTrap()
 {
-	std::cout << "Def constructor Scav" << std::endl;
+	this->_name = "";
+	this->_hitpoints = 100;
+	this->_nrgpoints = 100;
+	this->_atkpoints = 30;
+
+	std::cout << "Def constructor Flag" << std::endl;
 }
 
-FlagTrap::FlagTrap(std::string name): ClapTrap("", 100, 100, 30)
+FlagTrap::FlagTrap(std::string name): ClapTrap(name)
 {
-	std::cout << "Param constructor Scav" << std::endl;
+	//this->_name = name;
+	this->_hitpoints = 100;
+	this->_nrgpoints = 100;
+	this->_atkpoints = 30;
+
+	std::cout << "Param constructor Flag" << std::endl;
 }
 
 FlagTrap::~FlagTrap(void)
 {
-	std::cout << "Def destructor Scav" << std::endl;
+	std::cout << "Def destructor Flag" << std::endl;
 }
 
 FlagTrap& FlagTrap::operator=(FlagTrap const& cl)
 {
-	std::cout << "Operator = Scav" << std::endl;
+	std::cout << "Operator = Flag" << std::endl;
     operator=(cl);
 	return(*this);
 }
