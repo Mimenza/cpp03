@@ -6,18 +6,17 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:23:55 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/11 20:51:39 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/12 13:32:44 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "incs/ClapTrap.hpp"
 #include "incs/ScavTrap.hpp"
-#include "incs/FlagTrap.hpp"
 
 int main(void)
 {
 	ScavTrap	a("Arthur");
-	//ClapTrap	b("Dutch");
+	ClapTrap	b("Dutch");
 
 	// std::cout << a << std::endl;
 	// std::cout << b << std::endl;

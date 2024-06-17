@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:24:45 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/11 20:48:13 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/12 13:33:52 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ ClapTrap::ClapTrap(std::string name):_name(name),_hitpoints(10),_nrgpoints(10),_
 	std::cout << "Param constructor Clap" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name, unsigned int hitPoints, unsigned int nrgPoints, unsigned int atkPoints): _name(name),_hitpoints(hitPoints),_nrgpoints(nrgPoints),_atkpoints(atkPoints)
-{
-	std::cout << "Param constructor Clap Derivate" << std::endl;
-}
+// ClapTrap::ClapTrap(std::string name, unsigned int hitPoints, unsigned int nrgPoints, unsigned int atkPoints): _name(name),_hitpoints(hitPoints),_nrgpoints(nrgPoints),_atkpoints(atkPoints)
+// {
+// 	std::cout << "Param constructor Clap Derivate" << std::endl;
+// }
 
 ClapTrap::~ClapTrap(void)
 {

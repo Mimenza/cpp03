@@ -6,19 +6,29 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 12:28:14 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/11 20:48:08 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/12 13:31:47 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../incs/ScavTrap.hpp"
 
-ScavTrap::ScavTrap(void): ClapTrap("", 100, 50, 20)
+ScavTrap::ScavTrap(void): ClapTrap()
 {
+	this->_name = "";
+	this->_hitpoints = 100;
+	this->_nrgpoints = 50;
+	this->_atkpoints = 20;
+
 	std::cout << "Def constructor Scav" << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string name): ClapTrap(name, 100, 50, 20)
+ScavTrap::ScavTrap(std::string name): ClapTrap(name)
 {
+	//this->_name = name;
+	this->_hitpoints = 100;
+	this->_nrgpoints = 50;
+	this->_atkpoints = 20;
+
 	std::cout << "Param constructor Scav" << std::endl;
 }
 
