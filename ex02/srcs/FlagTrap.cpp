@@ -14,7 +14,7 @@
 
 FlagTrap::FlagTrap(void): ClapTrap()
 {
-	this->_name = "";
+	this->_name = "Default";
 	this->_hitpoints = 100;
 	this->_nrgpoints = 100;
 	this->_atkpoints = 30;
@@ -37,10 +37,20 @@ FlagTrap::~FlagTrap(void)
 	std::cout << "Def destructor Flag" << std::endl;
 }
 
+FlagTrap::FlagTrap(const FlagTrap &copy): ClapTrap(copy)
+{
+	std::cout << "Copy constructor Flag called" << std::endl;
+	//*this = copy;
+}
+
 FlagTrap& FlagTrap::operator=(FlagTrap const& cl)
 {
 	std::cout << "Operator = Flag" << std::endl;
-    operator=(cl);
+    _name = cl._name;
+	_hitpoints = cl._hitpoints;
+	_nrgpoints = cl._nrgpoints;
+	_atkpoints = cl._atkpoints;
+
 	return(*this);
 }
 
@@ -49,8 +59,3 @@ void FlagTrap::highFivesGuys(void)
     std::cout << "Give me a High Five!!" << std::endl;
 }
 
-std::ostream&	operator<<(std::ostream& stream, FlagTrap const& sl)
-{
-	sl.display(stream);
-	return (stream);
-}

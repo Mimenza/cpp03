@@ -6,13 +6,13 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:24:45 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/11 20:48:13 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/18 12:16:04 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../incs/ClapTrap.hpp"
 
-ClapTrap::ClapTrap(void):_name(""),_hitpoints(10),_nrgpoints(10),_atkpoints(0)
+ClapTrap::ClapTrap(void):_name("Default"),_hitpoints(10),_nrgpoints(10),_atkpoints(0)
 {
 	std::cout << "Def constructor Clap" << std::endl;
 }
@@ -21,14 +21,15 @@ ClapTrap::ClapTrap(std::string name):_name(name),_hitpoints(10),_nrgpoints(10),_
 	std::cout << "Param constructor Clap" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name, unsigned int hitPoints, unsigned int nrgPoints, unsigned int atkPoints): _name(name),_hitpoints(hitPoints),_nrgpoints(nrgPoints),_atkpoints(atkPoints)
-{
-	std::cout << "Param constructor Clap Derivate" << std::endl;
-}
-
 ClapTrap::~ClapTrap(void)
 {
 	std::cout << "Def destructor Clap" << std::endl;
+}
+
+ClapTrap::ClapTrap(const ClapTrap &copy)
+{
+	std::cout << "Copy constructor Clap called" << std::endl;
+	*this = copy;
 }
 
 ClapTrap& ClapTrap::operator=(ClapTrap const& cl)

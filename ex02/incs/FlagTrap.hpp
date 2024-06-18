@@ -10,12 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #ifndef FLAGTRAP_HPP
 # define FLAGTRAP_HPP
 
-# include <iostream>
-# include <string>
 # include "ClapTrap.hpp"
 
 class FlagTrap : public ClapTrap
@@ -25,11 +22,9 @@ class FlagTrap : public ClapTrap
 		FlagTrap(std::string name);
 		~FlagTrap();
 
-		FlagTrap(FlagTrap const&);
+		FlagTrap(const FlagTrap &copy);
 		FlagTrap&	operator=(FlagTrap const&);
 		void highFivesGuys(void);
 };
-
-std::ostream&	operator<<(std::ostream& stream, FlagTrap const& sl);
 
 #endif

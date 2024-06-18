@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:23:55 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/12 13:38:04 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/18 12:21:57 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int main(void)
 	FlagTrap	b("micka");
 	//ClapTrap	b("Dutch");
 
-	// std::cout << a << std::endl;
-	std::cout << b << std::endl;
+	//std::cout << a << std::endl;
+	//std::cout << b << std::endl;
 	// b.takeDamage(3);
 	// std::cout << b << std::endl;
 	// b.takeDamage(20);
@@ -38,5 +38,5 @@ int main(void)
 	// b.attack("Eric");
 	//a.attack("boniato");
 	//.guardGate();
-	b.highFivesGuys();
+	//b.highFivesGuys();
 }
