@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:24:45 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/10 16:43:35 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/18 11:22:27 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@ ClapTrap::ClapTrap(void):_name(""),_hitpoints(10),_nrgpoints(10),_atkpoints(0)
 {
 	std::cout << "Def constructor" << std::endl;
 }
+
 ClapTrap::ClapTrap(std::string name):_name(name),_hitpoints(10),_nrgpoints(10),_atkpoints(0)
 {
-	std::cout << "Param constructor" << std::endl;
+	std::cout << "Param constructor " << name << std::endl;
 }
 
 ClapTrap::~ClapTrap(void)
@@ -26,9 +27,15 @@ ClapTrap::~ClapTrap(void)
 	std::cout << "Def destructor" << std::endl;
 }
 
+ClapTrap::ClapTrap(const ClapTrap &copy)
+{
+	std::cout << "Copy constructor called" << std::endl;
+	*this = copy;
+}
+
 ClapTrap& ClapTrap::operator=(ClapTrap const& cl)
 {
-	std::cout << "Operator =" << std::endl;
+	std::cout << "Operator = Called" << std::endl;
 	_name = cl._name;
 	_hitpoints = cl._hitpoints;
 	_nrgpoints = cl._nrgpoints;
@@ -36,6 +43,7 @@ ClapTrap& ClapTrap::operator=(ClapTrap const& cl)
 
 	return(*this);
 }
+
 
 void ClapTrap::attack(const std::string& target)
 {
@@ -68,6 +76,7 @@ void		ClapTrap::display(std::ostream& stream) const
 {
 	stream << _name << " has " << _hitpoints << " hit points, " << _nrgpoints << " energy points and " << _atkpoints << " attack dammage.";
 }
+
 
 std::ostream&	operator<<(std::ostream& stream, ClapTrap const& cl)
 {
