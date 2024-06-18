@@ -6,15 +6,13 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 12:28:12 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/11 14:23:36 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/18 11:27:01 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCAVTRAP_HPP
 # define SCAVTRAP_HPP
 
-# include <iostream>
-# include <string>
 # include "ClapTrap.hpp"
 
 class ScavTrap : public ClapTrap
@@ -24,13 +22,11 @@ class ScavTrap : public ClapTrap
 		ScavTrap(std::string name);
 		~ScavTrap();
 
-		ScavTrap(ScavTrap const&);
+		ScavTrap(const ScavTrap &copy);
 		ScavTrap&	operator=(ScavTrap const&);
+		
 		void guardGate(void);
-
 		void attack(const std::string& target);
 };
-
-std::ostream&	operator<<(std::ostream& stream, ScavTrap const& sl);
 
 #endif

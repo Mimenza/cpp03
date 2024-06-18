@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 12:28:14 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/12 13:31:47 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/18 12:03:06 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ScavTrap::ScavTrap(void): ClapTrap()
 {
-	this->_name = "";
+	this->_name = "Default";
 	this->_hitpoints = 100;
 	this->_nrgpoints = 50;
 	this->_atkpoints = 20;
@@ -37,10 +37,19 @@ ScavTrap::~ScavTrap(void)
 	std::cout << "Def destructor Scav" << std::endl;
 }
 
+ScavTrap::ScavTrap(const ScavTrap &copy): ClapTrap(copy)
+{
+	std::cout << "Copy constructor Scav called" << std::endl;
+	//*this = copy;
+}
+
 ScavTrap& ScavTrap::operator=(ScavTrap const& cl)
 {
 	std::cout << "Operator = Scav" << std::endl;
-    operator=(cl);
+    this->_name = cl._name;
+	this->_hitpoints = cl._hitpoints;
+	this->_nrgpoints = cl._nrgpoints;
+	this->_atkpoints = cl._atkpoints;
 	return(*this);
 }
 
