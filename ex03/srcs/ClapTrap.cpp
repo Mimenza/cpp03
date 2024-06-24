@@ -6,13 +6,13 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:24:45 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/18 12:16:04 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/24 16:20:56 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../incs/ClapTrap.hpp"
 
-ClapTrap::ClapTrap(void):_name("Default"),_hitpoints(10),_nrgpoints(10),_atkpoints(0)
+ClapTrap::ClapTrap(void):_name("Default Clap"),_hitpoints(10),_nrgpoints(10),_atkpoints(0)
 {
 	std::cout << "Def constructor Clap" << std::endl;
 }

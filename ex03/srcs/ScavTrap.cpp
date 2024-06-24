@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 12:28:14 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/18 12:20:10 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/24 16:21:21 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ScavTrap::ScavTrap(void): ClapTrap()
 {
-	this->_name = "Default";
+	this->_name = "Default Scav";
 	this->_hitpoints = 100;
 	this->_nrgpoints = 50;
 	this->_atkpoints = 20;

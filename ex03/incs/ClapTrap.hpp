@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:24:47 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/18 12:33:03 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/24 16:11:49 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ class ClapTrap
 		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
-		void display(std::ostream& stream) const;
+		virtual void display(std::ostream& stream) const;
 };
 
 std::ostream&	operator<<(std::ostream& stream, ClapTrap const& cl);

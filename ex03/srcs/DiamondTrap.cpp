@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 12:26:10 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/18 15:38:44 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/24 16:28:59 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 DiamondTrap::DiamondTrap(void):ClapTrap() 
 {
-	this->_name = "Default";
+	this->_name = "Default Diamond";
 	this->_hitpoints = 100;
 	this->_nrgpoints = 50;
 	this->_atkpoints = 30;
@@ -22,9 +22,13 @@ DiamondTrap::DiamondTrap(void):ClapTrap()
 	std::cout << "Def constructor Diamond" << std::endl;
 }
 
-DiamondTrap::DiamondTrap(std::string name): ClapTrap(name + "_clap_name") 
+DiamondTrap::DiamondTrap(std::string name): ClapTrap(name + "_clap_name"), ScavTrap(name), FlagTrap(name), _name(name)
 {
-	this->_name = name;
+	//this->_name = name;
+	// this->_hitpoints = FlagTrap::_hitpoints;
+	// this->_nrgpoints = ScavTrap::_nrgpoints;
+	// this->_atkpoints = FlagTrap::_atkpoints;
+
 	this->_hitpoints = 100;
 	this->_nrgpoints = 50;
 	this->_atkpoints = 30;

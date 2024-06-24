@@ -14,7 +14,7 @@
 
 FlagTrap::FlagTrap(void): ClapTrap()
 {
-	this->_name = "Default";
+	this->_name = "Default Flag";
 	this->_hitpoints = 100;
 	this->_nrgpoints = 100;
 	this->_atkpoints = 30;
