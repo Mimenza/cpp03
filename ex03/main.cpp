@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:23:55 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/24 16:22:37 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/26 11:50:01 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,12 @@ int main(void)
 	//ScavTrap	d("micka");
 	//FragTrap	e("e");
 
-	DiamondTrap	diamond("patata");
+	//DiamondTrap	diamond("patata");
 
-	diamond.whoAmI();
-	diamond.display(std::cout);
+	//diamond.whoAmI();
+	//diamond.attack("paquito");
+	//diamond.display(std::cout);
+	//std::cout << diamond << std::endl;
 	// diamond.attack("arthur");
 	
 	/*e.highFivesGuys();

@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 12:26:11 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/18 15:38:39 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/26 11:45:37 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include "ScavTrap.hpp"
 # include "FlagTrap.hpp"
 
-class DiamondTrap: public ScavTrap, public FlagTrap
+class DiamondTrap:  public FlagTrap, public ScavTrap
 {
     private:
         std::string _name;
@@ -30,7 +30,7 @@ class DiamondTrap: public ScavTrap, public FlagTrap
         DiamondTrap&	operator=(DiamondTrap const&);
 
         void    whoAmI(void);
-        void    attack(const std::string& target);
+        //void    attack(const std::string& target);
 };
 
 #endif
