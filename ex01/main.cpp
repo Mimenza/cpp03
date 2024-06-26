@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:23:55 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/20 15:46:55 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/26 11:26:53 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,16 @@
 
 int main(void)
 {
-	ScavTrap	a("Arthur");
+	//ScavTrap	a("Arthur");
 	//ClapTrap	b("Dutch");
 
-	ScavTrap	b;
+	//ScavTrap	b;
 
-	b = a;
+	//b = a;
 
-	std::cout << b << std::endl;
+	//std::cout << a << std::endl;
+	//a.attack("pepe");
+	//b.attack("paco");
 	// std::cout << b << std::endl;
 	// b.takeDamage(3);
 	// std::cout << b << std::endl;
