@@ -6,7 +6,7 @@
 /*   By: emimenza <emimenza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 15:24:45 by emimenza          #+#    #+#             */
-/*   Updated: 2024/06/18 11:22:27 by emimenza         ###   ########.fr       */
+/*   Updated: 2024/06/26 11:20:14 by emimenza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,6 @@ void		ClapTrap::display(std::ostream& stream) const
 {
 	stream << _name << " has " << _hitpoints << " hit points, " << _nrgpoints << " energy points and " << _atkpoints << " attack dammage.";
 }
-
 
 std::ostream&	operator<<(std::ostream& stream, ClapTrap const& cl)
 {
